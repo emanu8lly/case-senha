@@ -1,6 +1,6 @@
 package com.exemplo.validador.service;
 
-import com.exemplo.validador.validators.RegraValidacaoSenha;
+import com.exemplo.validador.validators.ValidacaoSenha;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -8,9 +8,9 @@ import java.util.List;
 @Service
 public class ValidadorSenhaService {
 
-    private final List<RegraValidacaoSenha> regras;
+    private final List<ValidacaoSenha> regras;
 
-    public ValidadorSenhaService(List<RegraValidacaoSenha> regras) {
+    public ValidadorSenhaService(List<ValidacaoSenha> regras) {
         this.regras = List.copyOf(regras);
     }
 

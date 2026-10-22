@@ -1,0 +1,9 @@
+package com.exemplo.validador.validators;
+
+public class RegraPossuiDigito implements ValidacaoSenha {
+
+    @Override
+    public boolean validar(String senha) {
+        return senha.chars().anyMatch(Character::isDigit);
+    }
+}

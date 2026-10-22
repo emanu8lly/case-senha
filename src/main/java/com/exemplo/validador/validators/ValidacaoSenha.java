@@ -1,6 +1,6 @@
 package com.exemplo.validador.validators;
 
-public interface RegraValidacaoSenha {
+public interface ValidacaoSenha {
 
     boolean validar(String senha);
 }
